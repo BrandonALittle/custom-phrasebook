@@ -38,7 +38,7 @@ Once the project moves into development, the press release can be used as a touc
   Just visit the main page and start adding to your phrasebook.
 
 ## Customer Quote ##
-  " I started using Phrase Notes to help me remember the meanings of things people in Croatia say to me on the street. I am now able to communicate with people in real life after just a few interactions. "
+  " I started using Phrase Notes to help me remember the meanings of things people in Croatia say to me on the street. I am now able to communicate with people in real life after just a few interactions. " - Chucky
 
 ## Closing and Call to Action ##
   Visit the application's main page and see for yourself.
