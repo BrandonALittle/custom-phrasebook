@@ -16,29 +16,29 @@ Oh, and I also like to write press-releases in what I call "Oprah-speak" for mai
 Once the project moves into development, the press release can be used as a touchstone; a guiding light. The product team can ask themselves, "Are we building what is in the press release?" If they find they're spending time building things that aren't in the press release (overbuilding), they need to ask themselves why. This keeps product development focused on achieving the customer benefits and not building extraneous stuff that takes longer to build, takes resources to maintain, and doesn't provide real customer benefit (at least not enough to warrant inclusion in the press release).
  -->
  
-## Save-A-Phrase ##
-  > Name the product in a way the reader (i.e. your target customers) will understand.
+## Phrase Notes ##
+  An application for recording foreign language translations of phrases.
 
-## Sub-Heading ##
-  > Describe who the market for the product is and what benefit they get. One sentence only underneath the title.
+## Users ##
+  For people who want to keep track of phrases they have translated, either for study or for re-use.
 
 ## Summary ##
-  > Give a summary of the product and the benefit. Assume the reader will not read anything else so make this paragraph good.
+  This customized phrasebook application helps you to create translations and record them for future use, essentially helping you skip the dictionary and grammar books and go straight to using the language. 
 
 ## Problem ##
-  > Describe the problem your product solves.
+  If you are studying a foreign language, static one-book-fits-all phrasebooks can be inadequate. This is especially true if the people you interact with don't actually use those phrases (i.e. they say it another way), due to locale, dialect, or colloquial slang. Furthermore, language classes teach from a bottom-up perspective, but daily interactions in a foreign language consist of repetitive usage of phrases that can range from simple to complex in terms of grammar and vocabulary. One finds that learning translates slowly from the classroom to real life. 
 
 ## Solution ##
-  > Describe how your product elegantly solves the problem.
+  This application allows a user to get a foreign language translation of something they wish to say, which is stored for future use or study. A user can add to their phrasebook translations which they use in real life, and develop their learning around usage of phrases straight from their particular circumstances. In this way, they can focus on fluency first and accuracy second.
 
 ## Quote from You ##
-  > A quote from a spokesperson in your company.
+  " They always say it different on the street. "
 
 ## How to Get Started ##
-  > Describe how easy it is to get started.
+  Just visit the main page and start adding to your phrasebook.
 
 ## Customer Quote ##
-  > Provide a quote from a hypothetical customer that describes how they experienced the benefit.
+  " I started using Phrase Notes to help me remember the meanings of things people in Croatia say to me on the street. I am now able to communicate with people in real life after just a few interactions. "
 
 ## Closing and Call to Action ##
-  > Wrap it up and give pointers where the reader should go next.
+  Visit the application's main page and see for yourself.
