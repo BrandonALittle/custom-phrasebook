@@ -1,0 +1,29 @@
+{
+  "name": "custom-phrasebook",
+  "version": "1.0.0",
+  "description": "An application to save translations of phrases into a foreign language.",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test",
+    "server-dev": "nodemon --inspect server/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brandonalittle/custom-phrasebook.git"
+  },
+  "author": "Brandon Little",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brandonalittle/custom-phrasebook/issues"
+  },
+  "homepage": "https://github.com/brandonalittle/custom-phrasebook#readme",
+  "dependencies": {
+    "angular": "^1.6.9",
+    "angularjs": "0.0.1",
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "jquery": "^3.3.1",
+    "mongoose": "^5.0.6",
+    "request": "^2.83.0"
+  }
+}
