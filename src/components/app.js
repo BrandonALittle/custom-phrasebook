@@ -1,10 +1,9 @@
 
 angular.module('phrasebook', ['searchBox', 'phraseList'])
-  .controller('PhrasebookController', function(){
+  .controller('PhrasebookController', function(googleTranslate){
     this.phrases = Window.translateData.data.translations;
-
-    this.search = function() {
-
+    this.searchService = googleTranslate;
+    this.search = function(data) {
     }
   })
 
@@ -14,7 +13,7 @@ angular.module('phrasebook', ['searchBox', 'phraseList'])
     template: `
                 <div id="app container">
                   <div id="userList"><h1>Brandon's Phrases</h1></div>
-                  <search-box></search-box>
+                  <search-box service="$ctrl.searchService" processResults="$ctrl.processResults"></search-box>
                   <phrase-list id="phrases" phrases="$ctrl.phrases"></phrase-list>
                   </div>
                 </div>

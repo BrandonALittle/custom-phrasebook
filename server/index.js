@@ -23,7 +23,7 @@ app.post('/phrases', function(req, res) {
 });
 
 app.get('/phrases', function(req, res) {
-  let phrases = db.fetchPhrases// send phrases stored in database
+  let phrases = db.fetchPhrases();// send phrases stored in database
 });
 
 app.delete('/phrases', function(req, res) {
