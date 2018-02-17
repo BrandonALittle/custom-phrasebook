@@ -10,14 +10,14 @@ let phraseSchema = mongoose.schema({
 
 let Phrase = mongoose.model('phrase', phraseSchema);
 
-let save = (translation) => {
+let save = (translation) => { // save phrase to database
 
 };
 
-let remove = (translation) => {
+let remove = (translation) => { // delete phrase from database
 
 };
 
-let fetchPhrases = (callback) => {
+let fetchPhrases = (callback) => { // return all phrases from database
 
 };

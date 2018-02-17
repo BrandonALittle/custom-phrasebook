@@ -2,6 +2,10 @@
 angular.module('phrasebook', ['searchBox', 'phraseList'])
   .controller('PhrasebookController', function(){
     this.phrases = Window.translateData.data.translations;
+
+    this.search = function() {
+
+    }
   })
 
   .component('app', {

@@ -4,8 +4,8 @@
   "description": "An application to save translations of phrases into a foreign language.",
   "main": "index.js",
   "scripts": {
-    "test": "npm test",
-    "server-dev": "nodemon --inspect server/index.js"
+    "server-dev": "nodemon --inspect server/index.js",
+    "start": "node server/index.js"
   },
   "repository": {
     "type": "git",

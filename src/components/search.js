@@ -8,6 +8,7 @@ angular.module('searchBox', [])
     template: `
                 <div id="search">
                   <textarea name="textToTranslate" rows="4" placeholder="Enter text to translate"></textarea>
+                  <button name="searchTranslate">Translate</button>
                 </div>
               `
   });
