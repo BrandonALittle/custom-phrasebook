@@ -9,6 +9,7 @@ angular.module('phrase', [])
       phrase: '<'
     },
     template: `
-                <h5>Banana<h5>
+                <h3>English Phrase: {{$ctrl.phrase.original}}</h3>
+                <h3>{{$ctrl.phrase.translatedText}}<h3>
               `
   });
