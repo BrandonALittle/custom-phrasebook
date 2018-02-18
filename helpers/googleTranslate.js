@@ -16,11 +16,6 @@ let getTranslation = (phrase, callback) => {
   request(options, function(err, res, body) {
     if (err) throw Error;
     callback(null, JSON.parse(body));
-    // if (!body) {
-    //   console.log('I didnt receive anything from the googleTranslate request');
-    // } else {
-    //   callback(body);
-    // }
   });
 };
 

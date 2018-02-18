@@ -3,11 +3,10 @@ angular.module('phrasebook', ['phraseList', 'googleTranslate', 'translateBox'])
   .controller('PhrasebookController', function(googleTranslate){
     this.phrases = Window.translateData.data.translations;
     this.translateService = googleTranslate;
-    // this.search = function(data) {
-    // };
+    this.search = function(data) {
+    };
     this.processResults = (data) => {
-      console.log('PROCESS RESULTS in [APP.js line 9] says: ', data);
-      this.phrases = data;
+      this.phrases.push(data);
     }
   })
 
