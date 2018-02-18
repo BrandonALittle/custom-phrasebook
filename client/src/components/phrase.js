@@ -1,6 +1,10 @@
 angular.module('phrase', [])
   .controller('phraseController', function() {
-
+    this.languages = {
+      es: 'Spanish',
+      en: 'English',
+      vi: 'Vietnamese'
+    }
   })
 
   .component('phrase', {
@@ -9,7 +13,9 @@ angular.module('phrase', [])
       phrase: '<'
     },
     template: `
-                <h3>English Phrase: {{$ctrl.phrase.phrase}}</h3>
-                <h3>{{$ctrl.phrase.translatedText}}<h3>
+                <div class="left">{{$ctrl.phrase.phrase}}</div>
+                <span>{{$ctrl.phrase.translatedText}}</span>
+                <div class="right">{{$ctrl.languages[$ctrl.phrase.targetL]}}</div>
+
               `
   });

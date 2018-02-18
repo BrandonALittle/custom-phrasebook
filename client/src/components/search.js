@@ -1,11 +1,16 @@
 angular.module('translateBox', [])
   .controller('translateController', function() {
     this.handleClick = () => {
-      this.service.search(this.input);
       let process = this.result;
-      this.service.getPhrases(function(results) {
-        process(results.data);
+      let getPhrases = this.service.getPhrases;
+      this.service.search(this.input, function(response) {
+        getPhrases(function(results) {
+          console.log(results);
+          process(results);
+        });
       });
+
+
     }
   })
 

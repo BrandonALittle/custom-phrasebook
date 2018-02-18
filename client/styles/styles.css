@@ -1,0 +1,46 @@
+#userList {
+  background-color: #fff9a2;
+  border-top: solid 2px gray;
+  border-radius: 10px;
+  text-align: center;
+  width: 80%;
+  margin: auto;
+}
+
+phrase-list {
+  color: black;
+  text-decoration-style: none;
+}
+
+.phrase {
+  background-color: #cccbbf;
+  border: solid 2px black;
+  border-radius: 5px;
+  margin: 5px;
+  padding: 8px;
+  padding-bottom: 5px;
+}
+
+.left {
+  border-right: solid 2px gray;
+  width: 40%;
+  float: left;
+}
+
+.right {
+  border-left: solid 1px gray;
+  padding-left: 2px;
+  float: right;
+}
+
+translate-box {
+  width: 50%;
+  font-size: 2em;
+}
+
+textarea {
+  width: 50%;
+  font-size: .75em;
+  border-radius: 3px;
+  background-color: #fffeef;
+}

@@ -9,8 +9,11 @@ angular.module('phraseList', ['phrase'])
       phrases: '<'
     },
     template: `
-                <ul class="phrase-list">
-                  <phrase ng-repeat="phrase in $ctrl.phrases" phrase="phrase"></phrase>
-                </ul>
+                <div class="phrase-list">
+                <div class="phrase" ng-repeat="phrase in $ctrl.phrases">
+                  <phrase phrase="phrase"></phrase>
+                </div>
+
+                </div>
               `
   });

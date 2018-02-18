@@ -11,6 +11,8 @@ app.use(express.static(__dirname + '/../client/dist'));
 app.use(express.static(__dirname + '/../client/src/components'));
 app.use(express.static(__dirname + '/../client/src/data'));
 app.use(express.static(__dirname + '/../client/src/services'));
+app.use(express.static(__dirname + '/../client/styles'));
+
 app.use(parse.urlencoded({ extended: true }));
 app.use(parse.json());
 
