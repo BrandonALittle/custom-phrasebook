@@ -2,8 +2,9 @@ angular.module('translateBox', [])
   .controller('translateController', function() {
     this.handleClick = () => {
       this.service.search(this.input);
+      let process = this.result;
       this.service.getPhrases(function(results) {
-        this.processResults(results);
+        process(results.data);
       });
     }
   })
@@ -12,7 +13,7 @@ angular.module('translateBox', [])
     controller: 'translateController',
     bindings: {
       service: '<',
-      processResults: '<'
+      result: '<'
     },
     template:
               `

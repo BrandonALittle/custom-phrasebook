@@ -18,7 +18,7 @@ angular.module('phrasebook', ['phraseList', 'googleTranslate', 'translateBox'])
               `
                 <div id="app container">
                   <div id="userList"><h1>Brandon's Phrases</h1></div>
-                  <translate-box service="$ctrl.translateService" processResults="$ctrl.processResults"></translate-box>
+                  <translate-box service="$ctrl.translateService" result="$ctrl.processResults" phrases="$ctrl.phrases"></translate-box>
                   <phrase-list id="phrases" phrases="$ctrl.phrases"></phrase-list>
                   </div>
                 </div>

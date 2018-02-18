@@ -23,6 +23,7 @@ angular.module('googleTranslate', [])
     this.getPhrases = function(callback) {
       $http.get('http://127.0.0.1:3000/phrases')
         .then(function success(response) {
+          console.log("service module [line 26] returns : ", response);
           callback(response);// assign results to app data
         }, function error(response) {
           console.log('Phrases were not fetched from server [googleTranslate.js line 28]');
