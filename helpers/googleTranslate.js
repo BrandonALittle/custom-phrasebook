@@ -6,17 +6,21 @@ let getTranslation = (phrase, callback) => {
   let options = {
     url: searchUrl,
     qs: {
-      q: phrase.query,
-      source: phrase.sourceL,
-      target: phrase.targetL,
-      format: 'text',
+      q: phrase.phrase,
+      source: phrase.source,
+      target: phrase.target,
       key: config.API_KEY
     }
 
   }
   request(options, function(err, res, body) {
     if (err) throw Error;
-    callback(body);
+    callback(null, JSON.parse(body));
+    // if (!body) {
+    //   console.log('I didnt receive anything from the googleTranslate request');
+    // } else {
+    //   callback(body);
+    // }
   });
 };
 

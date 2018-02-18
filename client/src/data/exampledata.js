@@ -21,10 +21,6 @@ Window.translateData = {
         "original": "Help me!",
         "translatedText": "¿Que pasa?"
       },
-      {
-        "original": "Your butt stinks",
-        "translatedText": "Tu trasero apesta."
-      },
     ]
   }
 }

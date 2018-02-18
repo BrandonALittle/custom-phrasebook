@@ -1,22 +1,24 @@
-angular.module('searchBox', [])
-  .controller('searchController', function() {
+angular.module('translateBox', [])
+  .controller('translateController', function() {
     this.handleClick = () => {
       this.service.search(this.input, (data) => {
+        console.log(this.input);
         this.processResults(data);
-      }
+      });
     }
   })
 
-  .component('searchBox', {
-    controller: 'searchController',
+  .component('translateBox', {
+    controller: 'translateController',
     bindings: {
       service: '<',
-      processResults, '<'
+      processResults: '<'
     },
-    template: `
+    template:
+              `
                 <div id="search">
                   <textarea name="textToTranslate" rows="4" placeholder="Enter text to translate" ng-model="$ctrl.input"></textarea>
-                  <button name="searchTranslate" ng-click="$ctrl.handleClick()">Translate</button>
+                  <button name="translate" ng-click="$ctrl.handleClick()">Translate</button>
                 </div>
               `
   });
