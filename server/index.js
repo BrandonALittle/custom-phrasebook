@@ -12,15 +12,14 @@ app.use(express.static(__dirname + '/../client/src/components'));
 app.use(express.static(__dirname + '/../client/src/data'));
 app.use(express.static(__dirname + '/../client/src/services'));
 app.use(express.static(__dirname + '/../client/styles'));
+app.use(express.static(__dirname + '/../client/img'));
 
 app.use(parse.urlencoded({ extended: true }));
 app.use(parse.json());
 
 // routes
 app.post('/phrases', function(req, res) {
-  let phrase = req.body;// extract phrase submitted for translation
-  console.log('Phrase submitted for search [server-index]: ', phrase);
-  // db.save(phrase);
+  let phrase = req.body;
   db.lookFor(phrase, function(err, result) {
     if (err) throw Error;
     if (result === 0) {
@@ -44,15 +43,17 @@ app.post('/phrases', function(req, res) {
 
 app.get('/phrases', function(req, res) {
   db.fetchPhrases(function(err, results) {
-    console.log('server.js line 45, get request returns : ', results);
     if (err) throw Error;
     res.send(results);
   });// send phrases stored in database
 });
 
 app.delete('/phrases', function(req, res) {
-  let phrase = req.body;
-  db.remove(phrase);
+  let phrase = JSON.parse(req.query.phrase);
+  db.remove(phrase, function(err, result) {
+    if (err) throw Error;
+    res.end();
+  });
 })
 
 let port = 3000;

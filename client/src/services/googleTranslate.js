@@ -1,6 +1,5 @@
 angular.module('googleTranslate', [])
   .service('googleTranslate', function($http) {
-    console.log(`I'm gonna search`);
     this.search = function(query, callback) {
       $http.post('http://127.0.0.1:3000/phrases', {
           phrase: query,
@@ -25,7 +24,17 @@ angular.module('googleTranslate', [])
         .then(function success(response) {
           callback(response);// assign results to app data
         }, function error(response) {
-          console.log('Phrases were not fetched from server [googleTranslate.js line 28]');
+          console.log('Phrases were not fetched from server');
+        });
+    }
+
+    this.deletePhrase = function(phrase, callback) {
+      $http.delete(`http://127.0.0.1:3000/phrases`, {params: {'phrase': JSON.stringify(phrase)}})
+        .then(function success(response) {
+          console.log('I received a response');
+          callback();
+        }, function error(response) {
+          console.log('Failed to deleted phrase');
         });
     }
   })

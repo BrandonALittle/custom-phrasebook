@@ -6,12 +6,13 @@ angular.module('phraseList', ['phrase'])
   .component('phraseList', {
     controller: 'phraseListController',
     bindings: {
-      phrases: '<'
+      phrases: '<',
+      delete: '<'
     },
     template: `
                 <div class="phrase-list">
                 <div class="phrase" ng-repeat="phrase in $ctrl.phrases">
-                  <phrase phrase="phrase"></phrase>
+                  <phrase phrase="phrase" delete="$ctrl.delete"></phrase>
                 </div>
 
                 </div>

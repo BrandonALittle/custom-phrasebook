@@ -23,7 +23,7 @@ angular.module('translateBox', [])
     template:
               `
                 <div id="search">
-                  <textarea name="textToTranslate" rows="4" placeholder="Enter text to translate" ng-model="$ctrl.input"></textarea>
+                  <textarea name="textToTranslate" rows="3" placeholder="Enter text to translate" ng-model="$ctrl.input"></textarea>
                   <button name="translate" ng-click="$ctrl.handleClick()">Translate</button>
                 </div>
               `

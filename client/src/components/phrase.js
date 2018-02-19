@@ -10,12 +10,12 @@ angular.module('phrase', [])
   .component('phrase', {
     controller: 'phraseController',
     bindings: {
-      phrase: '<'
+      phrase: '<',
+      delete: '<'
     },
-    template: `
-                <div class="left">{{$ctrl.phrase.phrase}}</div>
-                <span>{{$ctrl.phrase.translatedText}}</span>
-                <div class="right">{{$ctrl.languages[$ctrl.phrase.targetL]}}</div>
+    template: ` <div class="delete" ng-click="$ctrl.delete($ctrl.phrase)"></div>
+                <div class="left"><h4>{{$ctrl.languages[$ctrl.phrase.sourceL]}}</h4><p class="original">{{$ctrl.phrase.phrase}}</p></div>
+                <div class="right"><h4>{{$ctrl.languages[$ctrl.phrase.targetL]}}</h4><p class="translated">{{$ctrl.phrase.translatedText}}</p></div>
 
               `
   });

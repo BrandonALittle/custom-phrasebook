@@ -13,7 +13,6 @@ let Phrase = mongoose.model('Phrase', phraseSchema);
 let save = (translation) => { // save phrase to database
   Phrase.create(translation, function(err, newPhrase) {
     if (err) return handleError(err);
-    console.log('Phrase added to database!');
   });
 }
 
@@ -25,14 +24,18 @@ let lookFor = (translation, callback) => {
   });
 };
 
-let remove = (translation) => { // delete phrase from database
-  Phrase.deleteMany(translation);
+let remove = (translation, callback) => { // delete phrase from database
+  let deletion = {phrase: translation.phrase, targetL: translation.targetL};
+  Phrase.remove(deletion, function(err, result) {
+    if (err) throw Error;
+    callback();
+  });
+
 };
 
 let fetchPhrases = (callback) => { // return all phrases from database
   Phrase.find({}, function(err, phrases) {
     if (err) throw Error;
-    console.log("FetchPhrases [database/index.js line 35] returns: ", phrases);
     callback(null, phrases);
   });
 };

@@ -18,23 +18,47 @@ phrase-list {
   border-radius: 5px;
   margin: 5px;
   padding: 8px;
-  padding-bottom: 5px;
 }
 
 .left {
-  border-right: solid 2px gray;
+  display: inline-block;
+  text-align: left;
   width: 40%;
-  float: left;
+  border-right: solid 2px gray;
+}
+
+h4 {
+  color: #7f7c51;
+  font-size: 1.2em;
+  margin: 2px;
+  padding: none;
+}
+
+p {
+  margin: 2px;
+  font-size: 1.2em;
 }
 
 .right {
-  border-left: solid 1px gray;
-  padding-left: 2px;
-  float: right;
+  display: inline-block;
+  align-content: right;
+  width: 40%;
+  text-align: right;
+}
+
+.delete {
+  background-image: url('deleteLogo.png');
+  background-size: 50px;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin-bottom: 10px;
 }
 
 translate-box {
-  width: 50%;
+  width: 60%;
   font-size: 2em;
 }
 
